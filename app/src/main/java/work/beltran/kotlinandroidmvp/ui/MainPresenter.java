@@ -9,14 +9,14 @@ import work.beltran.kotlinandroidmvp.api.GithubService;
 import work.beltran.kotlinandroidmvp.di.Schedulers;
 import work.beltran.kotlinandroidmvp.model.Repo;
 
-class MainPresenter {
+public class MainPresenter {
     private GithubService githubService;
     private Schedulers schedulers;
     private MainView view;
     private CompositeDisposable composite = new CompositeDisposable();
 
     @Inject
-    MainPresenter(GithubService githubService, Schedulers schedulers) {
+    public MainPresenter(GithubService githubService, Schedulers schedulers) {
         this.githubService = githubService;
         this.schedulers = schedulers;
     }
